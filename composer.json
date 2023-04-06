@@ -16,6 +16,7 @@
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",
+        "mjamilasfihani/larakit": "8.x-dev",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^5.10",
         "phpunit/phpunit": "^9.5.10"
@@ -55,7 +56,11 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "icanhazstring/composer-unused": true,
+            "infection/extension-installer": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
